@@ -4,12 +4,11 @@ import java.util.Scanner;
 
 public class MagicNumberTester {
 
-	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
 		
-		int originalInput;
-		String originalInputString;
+		int originalInput = 0;
+		String originalInputString = null;
 		String numberHolder = null;
 		boolean magic = false;
 		int number = 0;
@@ -70,6 +69,8 @@ public class MagicNumberTester {
 			
 			System.out.println("Invalid input");
 			e.printStackTrace();			
-		}		
+		}
+		
+		reader.close();
 	}
 }
